@@ -1,0 +1,25 @@
+{
+  "name": "k6ioscripts",
+  "version": "0.0.1",
+  "description": "loadimpact/k6 scripts, tests and random useful things",
+  "main": "index.js",
+  "bin": {
+    "k6ioscripts": "k6install.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sethuster/k6ioScripts.git"
+  },
+  "author": "Seth Urban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sethuster/k6ioScripts/issues"
+  },
+  "homepage": "https://github.com/sethuster/k6ioScripts#readme",
+  "dependencies": {
+    "shelljs": "^0.8.3"
+  }
+}

@@ -1,5 +1,7 @@
-import http from 'k6/http';
+import http from "k6/http";
+import { sleep } from "k6";
 
 export default function() {
-  const response = http.get("http://test.loadimpact.com");
+  http.get("http://test.loadimpact.com");
+  sleep(1);
 };
