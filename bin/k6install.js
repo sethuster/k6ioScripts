@@ -10,7 +10,9 @@ function install(){
       //execute some powershell script
       break;
     case 'linux':
-      //execute some bash script - maybe shelljs would work?
+      shell.exec('tar -jxf ./k6vers/k6-v0.23.1-linux64.tar.gz -C ./.install');
+      shell.exec('mv ./.install/k6-v0.23.1-linux64/k6 ./.install/k6');
+      shell.exec('rm -rf ./.install/k6-v0.23.1-linux64');
       break;
     default:
       console.log('You are somehow not on Linux, OSX, or Windows - good job.');
